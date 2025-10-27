@@ -1,0 +1,3 @@
+- When a variable is declared as `volatile`, it tells the compiler:
+	- The compiler must not assume the value of the variable remains constant between accesses, so it should read the value from memory every time it is used
+	- The compiler must not reorder instructions in a way that changes the access order of the `volatile` variable

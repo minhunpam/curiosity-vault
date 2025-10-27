@@ -1,0 +1,12 @@
+table, .table-wrapper {
+    margin-inline: auto;
+}
+
+body {
+  --h1-color: yellow;
+  --h2-color: yellow;
+  --h3-color: yellow;
+  --h4-color: orange;
+  --h5-color: orange;
+  --h6-color: orange;
+}

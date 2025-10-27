@@ -1,0 +1,5 @@
+- global arrays initialized with 0s
+- `static` declared within the scope of a function
+- deadlock:
+	- the thread holds a mutex and is mutex in a never-ending while loop so the mutex is never unlocked, while other threads might want acquire the mutex
+- Make proper assumptions to be able to show the race condition
