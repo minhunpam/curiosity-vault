@@ -49,15 +49,19 @@ dp[i] =
 \end{cases}
 $$
 
-
-
-## Knapsack problem 
+## 0/1 Knapsack problem 
 - Input: 
 	- n items
 		- each item has some weight + profit
 	- a bag with capacity W -> the bag can hold at most W weight in it
 - Goal: put the items into the bag such that the sum of profits is the maximum possible
-> Note: 
+> Note: The constraint here is we can either put an item completely into the bag or cannot put it at all (it)
+
+### Naive Solution
+- We have to try every possible permuatation which takes $\mathcal{O}(2^n)$ runtime
+
+### Tabulation Method
+
 
 ## Max Subarray sum
 - input: `int A[1,...,n]`
