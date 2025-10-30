@@ -1,10 +1,15 @@
-## Listing
+## Listing 
 ```bash
 ls -la
 ```
 - `-la`:
 	- **`-l`** → long listing format.  
-    Instead of just showing filenames, it shows details like permissions, owner, group, size, and modification time.
+	    - Instead of just showing filenames, it shows details:
+			-  permissions 
+			-  owner
+			-  group
+			- size 
+			-  modification time.
 	- **`-a`** → show _all_ files, including hidden ones (those starting with `.`).
 
 ## Displaying
