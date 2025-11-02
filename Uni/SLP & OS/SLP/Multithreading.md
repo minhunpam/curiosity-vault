@@ -8,13 +8,21 @@
 - actions: run, interrupt, stop
 - resources: time on the CPU, stack, registers
 	- thread ID
-	- thread state
-	- a set of register values
-	- stack
-- if part of a process -> restricted to the boundaries of a process
-- share the same address space (because of the same process)
-- **keywords: dispatcher thread, worker thread**
-	
+	- program counter
+	- a set of registers
+	- stack + stack pointer
+	- thread-local storage
+- is part of only one process -> restricted to the boundaries of a process
+- All threads in the same process share:
+	- Text/Code segment
+	- Data segment
+	- OS resources
+	- virtual address space
+		- If 1 thread calls `malloc()`, another thread can access that same pointer
+		- If 1 thread writes to a global variable, all others see that updated value
+		- The same code (functions) is executed at the same virtual addresses for all threads
+
+
 ### **Process**: a container for threads and memory contents of a program
 - actions: create, start, terminate
 - resources: threads, memory, program
@@ -22,7 +30,7 @@
 - is created at boot time
 - processes don't run, but live dependently on the lifetime of threads. If there are no threads left, the process loses its meaning -> die
 
->> ⚠️ Do not confuse ***shared memory(between processes)*** with ***shared address space (between threads)***
+>> ⚠️ Do not confuse ***shared memory (between processes)*** with ***shared address space (between threads)***
 
 #### How process terminates
 1. Normal termination (caused by `exit()`)
@@ -40,11 +48,60 @@
 - child does not know the parent
 - parent knows the child
 - `waitpid` - parent waits for child to die
-## Return Value
-- SHALL return 0 to the child process and SHALL return the process ID of the child process to the parent process
-- Otherwise, -1 SHALL be returned to the parent process, no child process SHALL be created
+- when `parent` process dies -> it kills all `child` processes
+### Return Value
+- On success:
+	- PID of child process ( > 0) returned in the parent
+	- 0 is returned in the child
+- On failure: 
+	- -1 is returned to the parent process,**no child process is created**
 
+### Copy-On-Write (COW)
+- a resource management technique
+- One of main uses is the implementation of the [[Multithreading#`pid_t fork(void)`|fork system call]] in which it shares the virtual memory (pages) of the OS
 
+#### Mechanism
+- When a parent process creates a child process then both of these processes, parent's page tables will be duplicated, each entry in both page tables points to the same physical frame
+- Before `fork()`:
+Parent's page table
+
+| Page           | Physical Frame |
+| -------------- | -------------- |
+| 0x5555abcd0000 | #12345         |
+
+- After `fork()`:
+Parent's page table
+
+| Page           | Physical Frame | Flags     | Kernel metadata |
+| -------------- | -------------- | --------- | --------------- |
+| 0x5555abcd0000 | #12345         | Read-only | copy-on-write   |
+Child's page table:
+
+| Page           | Physical Frame | Flags     | Kernel metadata |
+| -------------- | -------------- | --------- | --------------- |
+| 0x5555abcd0000 | #12345         | Read-only | copy-on-write   |
+- Suppose child proces  wants to modify that entry
+	- The CPU checks child's page table for `0x5555abcd0000` and finds it read-only
+	- Since it's marked COW, kernel's page fault handler
+		- allocates new physical frame (`#67890`)
+		- copies the content of frame `#12345` + new modifications into frame `#67890`
+		- Updates the child's page table entry pointing to the new frame
+			- marks as writable
+
+Now:
+Parent's page table
+
+| Page           | Physical Frame | Flags     | Kernel metadata |
+| -------------- | -------------- | --------- | --------------- |
+| 0x5555abcd0000 | #12345         | Read-only | copy-on-write   |
+Child's page table:
+
+| Page           | Physical Frame | Flags    | Kernel metadata |
+| -------------- | -------------- | -------- | --------------- |
+| 0x5555abcd0000 | #67890         | writable | copy-on-write   |
+- Both processes have the same virtual address, but each row maps to a different physical frame
+
+![[Copy-on-Write.png]]
 ## exec
 ### execvpe
 - replace running process with process defined by `file`

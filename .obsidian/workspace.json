@@ -4,67 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "e903d30ee289f28e",
+        "id": "f6d306763071fbc4",
         "type": "tabs",
         "children": [
           {
-            "id": "c83373ba4bf17021",
+            "id": "d68b7efbc94b2dd1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Low Level/C Programming Language/C-Note.md",
+                "file": "Uni/Logic & Computability/SAT Solving.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "C-Note"
-            }
-          },
-          {
-            "id": "f33bde6d160dd175",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Uni/SLP/Memory.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Memory"
-            }
-          },
-          {
-            "id": "64328432e42772c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Low Level/C Programming Language/Variables/Global Variables.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Global Variables"
-            }
-          },
-          {
-            "id": "52a9d4a7c6c61b60",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Uni/SLP/Assignments/A3 - Memory Observation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "A3 - Memory Observation"
+              "title": "SAT Solving"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "extern",
+                "query": "function pointer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -137,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Uni/SLP/Assignments/Assignment 2 - Multithreading Synchronization.md",
+                "file": "Uni/Logic & Computability/SAT Solving.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Assignment 2 - Multithreading Synchronization"
+              "title": "Backlinks for SAT Solving"
             }
           },
           {
@@ -212,20 +169,41 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52a9d4a7c6c61b60",
+  "active": "d68b7efbc94b2dd1",
   "lastOpenFiles": [
+    "Uni/SLP & OS/SLP/Memory/Memory.md",
+    "Uni/Logic & Computability/Natural Deduction.md",
+    "Uni/Logic & Computability/SAT Solving.md",
+    "Uni/WI/Probability Theory.md",
+    "Uni/Logic & Computability/L&C (705.011).md",
+    "Uni/Logic & Computability/Propositional Logic.md",
+    "Uni/SLP & OS/SLP/Assignments/A3 - Memory Layout and Demand Paging.md",
+    "Uni/SLP & OS/SLP/Multithreading.md",
+    "Low Level/C Programming Language/Pointers/Function Pointer.md",
+    "Low Level/C Programming Language/Pointers/Pointer.md",
+    "Copy-on-Write.png",
+    "Pasted image 20251101112103.png",
+    "Uni/SLP & OS/SLP/Memory/Memory Management.md",
+    "Uni/SLP & OS/SLP/Course Info.md",
+    "Low Level/C Programming Language/C-Note.md",
+    "Uni/SLP & OS/SLP/Memory",
+    "Uni/CON/Computer Architecture.md",
+    "Uni/SLP & OS/SLP/Assignments/A1 - Multithreading.md",
     "Low Level/C Programming Language/Variables/Global Variables.md",
+    "Uni/SLP & OS/OS/Kernel.md",
+    "Uni/SLP & OS/OS",
+    "Uni/SLP & OS/SLP",
+    "Resources/SLP/lazy-swapping.jpg",
+    "Resources/SLP/Unconfirmed 609982.crdownload",
+    "Resources/SLP/nokaslr.png",
+    "Uni/SLP & OS/SLP/Interprocess Communication.md",
     "Linux/Linux Commands.md",
-    "Uni/SLP/Assignments/A3 - Memory Observation.md",
-    "Uni/SLP/Memory.md",
     "Resources/SLP/Address Translation.png",
     "Resources/SLP/Virtual Memory.png",
     "Resources/SLP/Paging.png",
     "Resources/SLP/Memory-Layout-of-C-Program.webp",
     "Resources/SLP/Unconfirmed 402404.crdownload",
-    "Low Level/C Programming Language/C-Note.md",
-    "Uni/SLP/Assignments/A2 - Multithreading Synchronization.md",
-    "Uni/SLP/Multithreading.md",
+    "Uni/SLP & OS/SLP/Assignments/A2 - Multithreading Synchronization.md",
     "Low Level/C Programming Language/Variables/`volatile` keyword.md",
     "Uni/DSA2/Dynamic Programming.md",
     "Git/Git Basics.md",
@@ -233,32 +211,12 @@
     "Linux/Linux Root.md",
     "Uni/CON/Assignments/Task 2 - Binary GCD.md",
     "Resources/CON/CON - TIming diagram for Mealy Machine.png",
-    "Uni/SLP/Synchronization.md",
-    "Uni/SLP/Assignments/A1 - Multithreading.md",
-    "Uni/CON/Combinational Circuits.md",
-    "Uni/CON/Finite State Machine.md",
     "Resources/CON/CON - Mealy Machine.png",
-    "Uni/CON/Sequential Circuits.md",
-    "Resources/CON/CON - Flip-flop clock signal.png",
-    "Resources/CON/CON - Gated Latch Timing Diagram.png",
-    "Uni/CON/Assignments/Task 1 - Integer Square Root.md",
-    "Uni/CON/CON - Lecture Note.md",
-    "Uni/Logic & Computability/Natural Deduction.md",
-    "Uni/DSA2/Recurrence Relation.md",
-    "Uni/Logic & Computability/Propositional Logic.md",
-    "Uni/OOP2/Networking & Sockets.md",
-    "Uni/OOP2/Java Multithreading.md",
     "Java/Spring/MIddleware",
     "Java/Spring/Validation",
-    "Resources/DSA/sum of asymptotic values rule.png",
-    "Resources/CON/CON - endianess (little and big).png",
     "Java/Spring/MIddleware/Repository",
     "Java/Java Core",
     "Resources/DSA/dag_with_unique_topological_order",
-    "Resources/DSA/Unconfirmed 704008.crdownload",
-    "Resources/DSA/Unconfirmed 866951.crdownload",
-    "Resources/DSA",
-    "Resources/DSA2",
     "Untitled.canvas"
   ]
 }

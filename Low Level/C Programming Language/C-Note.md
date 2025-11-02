@@ -47,7 +47,7 @@ int main() {
 ```
 
 ## `register` keyword
-- faster than memory to access, so the variables which are most frequently used in a C program can be put in registers using the `register` keyword
+- **faster than memory to access**, so the variables which are most frequently used in a C program can be put in registers using the `register` keyword
 - The keyword hints to the compiler that a given variable can be put in a register
 	- It's the compiler's choice to put it in a register or not
 	- Compilers themselves do optimizations and put the variable in a register
