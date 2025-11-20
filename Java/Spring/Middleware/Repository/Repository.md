@@ -1,0 +1,1 @@
+- The repository pattern provides a central place for handling all data access logic, abstracting the complexities of data storage and retrival from the rest  of the application
