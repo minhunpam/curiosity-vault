@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f6d306763071fbc4",
+        "id": "4ccdee5c5f83ed3c",
         "type": "tabs",
         "children": [
           {
-            "id": "d68b7efbc94b2dd1",
+            "id": "5780fa1fbeb67b6d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Uni/Logic & Computability/SAT Solving.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "SAT Solving"
+              "title": "New tab"
             }
           }
         ]
@@ -53,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "function pointer",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 243.5
   },
   "right": {
     "id": "456c9bfddb057f87",
@@ -169,54 +165,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d68b7efbc94b2dd1",
+  "active": "5780fa1fbeb67b6d",
   "lastOpenFiles": [
+    "Uni/CON/Assignments/Task 3 - CPU Integration.md",
+    "Uni/SLP & OS/SLP/Assignments/A5 - Dynamic Memory Implementation.md",
+    "Uni/SLP & OS/SLP/Testing & Debugging.md",
+    "Uni/CON/Lecture 5 - Processors.md",
+    "Uni/CON/RISC-V Basics.md",
+    "Uni/CON/Lecture 1 - Combinational Circuits.md",
+    "Uni/CON/Lecture 6 - Programming a RISC-V CPU.md",
+    "Uni/DSA2/Union Find.md",
+    "Uni/CON/Lecture 4 - Finite State Machine.md",
+    "Uni/CON/Lecture 3 - Sequential Circuits.md",
+    "Uni/CON/Assignments/Task 1 - Integer Square Root.md",
+    "Uni/CON/Assignments/Task 2 - Binary GCD.md",
+    "Uni/LC/Propositional Logic/Lecture 5 - Binary Decision Diagrams (BDDs).md",
+    "JAL.png",
+    "CON - more conditional branches.png",
+    "Uni/LC/Predicate Logic/Lecture 6 - Predicate Logic (First-Order Logic).md",
+    "Uni/LC/Predicate Logic",
+    "Uni/LC/Propositional Logic",
+    "Resources/CON/CON - BEQ.png",
+    "Resources/CON/CON - BEQ.png",
+    "Resources/CON/CON - INSTRUCTION MEMORY.png",
+    "Resources/CON/CON - ADDI MACHINE LANGUAGE.png",
+    "Resources/CON/CON - store word.png",
+    "Resources/CON/CON - Load Instructions.png",
+    "Resources/CON/CON - non-aligned access.png",
+    "Resources/CON/CON - Load word.png",
     "Uni/SLP & OS/SLP/Memory/Memory.md",
-    "Uni/Logic & Computability/Natural Deduction.md",
-    "Uni/Logic & Computability/SAT Solving.md",
+    "Uni/CON/SystemVerilog Data Types.md",
+    "Uni/WI/Random Variable.md",
     "Uni/WI/Probability Theory.md",
-    "Uni/Logic & Computability/L&C (705.011).md",
-    "Uni/Logic & Computability/Propositional Logic.md",
-    "Uni/SLP & OS/SLP/Assignments/A3 - Memory Layout and Demand Paging.md",
     "Uni/SLP & OS/SLP/Multithreading.md",
-    "Low Level/C Programming Language/Pointers/Function Pointer.md",
-    "Low Level/C Programming Language/Pointers/Pointer.md",
-    "Copy-on-Write.png",
-    "Pasted image 20251101112103.png",
-    "Uni/SLP & OS/SLP/Memory/Memory Management.md",
-    "Uni/SLP & OS/SLP/Course Info.md",
-    "Low Level/C Programming Language/C-Note.md",
-    "Uni/SLP & OS/SLP/Memory",
-    "Uni/CON/Computer Architecture.md",
+    "Uni/DSA2/Basic Graph Theory.md",
+    "Uni/LC/Propositional Logic/Lecture 4 - Combinational Equivalence Checking.md",
+    "Uni/LC/Propositional Logic/Lecture 1 - Propositional Logic.md",
+    "Uni/SLP & OS/SLP/Assignments/A4 - Inter-Process Communication.md",
     "Uni/SLP & OS/SLP/Assignments/A1 - Multithreading.md",
-    "Low Level/C Programming Language/Variables/Global Variables.md",
-    "Uni/SLP & OS/OS/Kernel.md",
+    "Uni/SLP & OS/SLP/Inter-process Communication.md",
+    "Uni/SLP & OS/SLP/Synchronization.md",
+    "Resources/Neodigital_P302606458_D20250710_Partnerkorrespondenz_K716206485.pdf",
+    "Uni/DSA2/Untitled",
+    "Java/Spring/Build Tools",
+    "Java/Spring/Build Tools/Maven",
+    "Uni/OOP2/Assignments",
+    "Uni/SLP & OS/SLP/Memory",
     "Uni/SLP & OS/OS",
     "Uni/SLP & OS/SLP",
-    "Resources/SLP/lazy-swapping.jpg",
-    "Resources/SLP/Unconfirmed 609982.crdownload",
-    "Resources/SLP/nokaslr.png",
-    "Uni/SLP & OS/SLP/Interprocess Communication.md",
-    "Linux/Linux Commands.md",
-    "Resources/SLP/Address Translation.png",
-    "Resources/SLP/Virtual Memory.png",
-    "Resources/SLP/Paging.png",
-    "Resources/SLP/Memory-Layout-of-C-Program.webp",
-    "Resources/SLP/Unconfirmed 402404.crdownload",
-    "Uni/SLP & OS/SLP/Assignments/A2 - Multithreading Synchronization.md",
-    "Low Level/C Programming Language/Variables/`volatile` keyword.md",
-    "Uni/DSA2/Dynamic Programming.md",
-    "Git/Git Basics.md",
-    "Linux/Linux Basics.md",
-    "Linux/Linux Root.md",
-    "Uni/CON/Assignments/Task 2 - Binary GCD.md",
-    "Resources/CON/CON - TIming diagram for Mealy Machine.png",
-    "Resources/CON/CON - Mealy Machine.png",
-    "Java/Spring/MIddleware",
-    "Java/Spring/Validation",
-    "Java/Spring/MIddleware/Repository",
-    "Java/Java Core",
-    "Resources/DSA/dag_with_unique_topological_order",
     "Untitled.canvas"
   ]
 }

@@ -54,3 +54,20 @@ s.map(String::length)
 	.forEach(System.out::print); // 676
 ```
 
+
+## `filter()`
+- returns a `Stream` with elements that match a given expression
+- Method signature:
+```java
+Stream<T> filter(Predicate<? super T> predicate)
+```
+- Example:
+```java
+Stream<String> s = Stream.of("Monkey", "gorilla", "bonobo");
+s.filter(x -> x.startWith("m")).forEach(System.out::println); 
+// Output: monkey
+```
+
+
+
+

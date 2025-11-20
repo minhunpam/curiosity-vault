@@ -30,6 +30,30 @@
 2. Desgin the datapath based on the states of the ASM diagram
 3. Add register transfer statements and outputs for each state
 4. Add the control logic for all state transitions and condition checks to the ASM diagram
+## 3. What did I do?
+- I divided the program into separate parts: 
+	- The control unit
+	- The data path
+- Each single part has 
+	- 1 `always_ff` block
+	- 1 `always_comb` block
+### Control Unit
+- I introduced 
+	- an enum of 3-bit states (maximum 8 states)
+	- control signals on which the data path can rely to do the proper operations
+- `always_ff`
+	- on reset -> go to `INIT`
+	- on every clock cycle -> move from `state_p` to `state_p`
+- `always_comb`
+	- Has default assignments for each control signal
+	- In each state, it will check the value of control signals to determine
+		- the change of some control signals
+		- what the next state is
 
-## Bugs that I encountered
-- When it comes to states
+### Datapath
+- I introduced different 32-bit-registers for `a`, `b` and `k`
+- `always_ff`
+	- on reset -> set the 'present' registers
+	- on `start_i` and `state_p == INIT` -> reset the 'present' registers
+- `always_comb`
+	- Do operations with respect to matching control signals

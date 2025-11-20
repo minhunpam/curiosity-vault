@@ -103,8 +103,10 @@ void doSomething() {
 
 ## Anonymous Class
 - a specialized form of a local class that does not have a name
-- is declared and instantiated all in one statement using the new keyword
-- anonymous classes are required to ***extend an existing class*** or ***implement an interface***
+- is declared and instantiated all in one statement using the `new` keyword
+- anonymous classes are required to 
+	- ***Extend an existing class*** or 
+	- ***Implement an interface***
 ### Extend an existing class
 ```java
 public class ZooGiftShop {

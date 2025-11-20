@@ -10,3 +10,18 @@ body {
   --h5-color: orange;
   --h6-color: orange;
 }
+
+body {
+  /*Set the width of your desire here*/
+  --user-custom-width: 80rem !important;
+  /*Code for edit view*/
+  --file-line-width: var(--user-custom-width) ;
+  /*Code for live read view*/
+  --content-max-width: 100rem !important;
+  --content-base-width: var(--user-custom-width);
+}
+
+.cm-s-obsidian span.cm-inline-code {
+    color: #89cff0;
+    font-weight: bold;
+}

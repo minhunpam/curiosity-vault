@@ -314,8 +314,6 @@ getconf PAGE_SIZE
 	- So when CPU later tries to access that address:
 		- The MMU looks up the virtual page in the page tables -> no valid entry -> page fault -> The kernel sees it's not mapped -> Definite SEGFault
 
-
-
 ## Question 86
 - Question: **I defined a variable on the stack as const. Because it is defined as const, ...**
 	1. None of the other answers are correct.  

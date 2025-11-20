@@ -101,7 +101,7 @@ Child's page table:
 | 0x5555abcd0000 | #67890         | writable | copy-on-write   |
 - Both processes have the same virtual address, but each row maps to a different physical frame
 
-![[Copy-on-Write.png]]
+![[Resources/SLP/Copy-on-Write.png]]
 ## exec
 ### execvpe
 - replace running process with process defined by `file`

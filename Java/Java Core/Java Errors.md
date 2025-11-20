@@ -35,3 +35,18 @@ catch(Exception e) {
 - `throw` statement allows you to create a custom error
 - `throw` is used together with an **exception type**
 
+### Distinguishing between `throws` and `throws`
+- The `throw` keyword means an exception is actually being thrown
+- The `throws` keyword **indicates that the method merely has the potential to throw that exception**
+#### Example:
+```java :n
+public String getDataFromDatabase() throws SQLException {
+	throw new UnsupportedOperationException();
+}
+```
+- `throws SQLException` - the method might or might not throw `SQLException`
+	- Since this is a checked exception, the caller needs to handle or declare it
+- `throw new UnsupportedOperationException()` - actually does throw an `UnsupportedOperationException`
+
+
+

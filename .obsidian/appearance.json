@@ -1,6 +1,6 @@
 {
   "accentColor": "",
-  "showRibbon": false,
+  "showRibbon": true,
   "enabledCssSnippets": [
     "style"
   ]
