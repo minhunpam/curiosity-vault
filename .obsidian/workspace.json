@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4ccdee5c5f83ed3c",
+        "id": "99eaa23585e1b117",
         "type": "tabs",
         "children": [
           {
-            "id": "5780fa1fbeb67b6d",
+            "id": "9e549ca2c65971ad",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Uni/SLP & OS/SLP/Assignments/A5 - Dynamic Memory Implementation.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "A5 - Dynamic Memory Implementation"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "C++",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Uni/Logic & Computability/SAT Solving.md",
+                "file": "Uni/SLP & OS/SLP/Assignments/A5 - Dynamic Memory Implementation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for SAT Solving"
+              "title": "Backlinks for A5 - Dynamic Memory Implementation"
             }
           },
           {
@@ -109,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux.md",
+                "file": "Uni/SLP & OS/SLP/Assignments/A5 - Dynamic Memory Implementation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Linux"
+              "title": "Outgoing links from A5 - Dynamic Memory Implementation"
             }
           },
           {
@@ -147,7 +151,8 @@
               "title": "Outline of Linux"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -165,24 +170,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5780fa1fbeb67b6d",
+  "active": "9e549ca2c65971ad",
   "lastOpenFiles": [
-    "Uni/CON/Assignments/Task 3 - CPU Integration.md",
-    "Uni/SLP & OS/SLP/Assignments/A5 - Dynamic Memory Implementation.md",
-    "Uni/SLP & OS/SLP/Testing & Debugging.md",
-    "Uni/CON/Lecture 5 - Processors.md",
-    "Uni/CON/RISC-V Basics.md",
-    "Uni/CON/Lecture 1 - Combinational Circuits.md",
-    "Uni/CON/Lecture 6 - Programming a RISC-V CPU.md",
-    "Uni/DSA2/Union Find.md",
-    "Uni/CON/Lecture 4 - Finite State Machine.md",
-    "Uni/CON/Lecture 3 - Sequential Circuits.md",
-    "Uni/CON/Assignments/Task 1 - Integer Square Root.md",
-    "Uni/CON/Assignments/Task 2 - Binary GCD.md",
     "Uni/LC/Propositional Logic/Lecture 5 - Binary Decision Diagrams (BDDs).md",
-    "JAL.png",
-    "CON - more conditional branches.png",
+    "Low Level/Why Some Projects Use Multiple Languages.md",
+    "Low Level/C++/C++ Knowledge.md",
+    "Low Level/C++/C++ Stuff.md",
+    "Uni/SLP & OS/SLP/Assignments/A5 - Dynamic Memory Implementation.md",
+    "Low Level/Makefile.md",
+    "Uni/LC/Propositional Logic/Lecture 2 - Natural Deduction.md",
+    "Uni/LC/Predicate Logic/Lecture 7 - Natural Deduction for Predicate Logic.md",
+    "Uni/SLP & OS/SLP/Memory allocator.md",
+    "Uni/SLP & OS/SLP/System-level Programming.md",
+    "Uni/SLP & OS/SLP/Multithreading.md",
+    "Uni/SLP & OS/SLP/Inter-process Communication.md",
+    "Uni/SLP & OS/SLP/Exam Preparation.md",
+    "Uni/SLP & OS/SLP/Course Info.md",
+    "Uni/SLP & OS/SLP/Computer Architecture.md",
+    "Java/System Design/Protocol Buffers.md",
+    "Uni/SLP & OS/SLP/Assignments/A6.md",
+    "Java/System Design/gRPC (google Remote Procedure Calls).md",
+    "Resources/CON/JAL.png",
+    "Uni/OOP2/Assignments/A1 - Geographic Information System Development.md",
     "Uni/LC/Predicate Logic/Lecture 6 - Predicate Logic (First-Order Logic).md",
+    "Docker.md",
+    "Low Level/Low Level.md",
+    "REST API.md",
+    "Git/Git Basics.md",
+    "Java/Spring/IOC Container.md",
+    "Java/Spring/Middleware/Service.md",
+    "Resources/CON/CON - more conditional branches.png",
     "Uni/LC/Predicate Logic",
     "Uni/LC/Propositional Logic",
     "Resources/CON/CON - BEQ.png",
@@ -193,18 +210,6 @@
     "Resources/CON/CON - Load Instructions.png",
     "Resources/CON/CON - non-aligned access.png",
     "Resources/CON/CON - Load word.png",
-    "Uni/SLP & OS/SLP/Memory/Memory.md",
-    "Uni/CON/SystemVerilog Data Types.md",
-    "Uni/WI/Random Variable.md",
-    "Uni/WI/Probability Theory.md",
-    "Uni/SLP & OS/SLP/Multithreading.md",
-    "Uni/DSA2/Basic Graph Theory.md",
-    "Uni/LC/Propositional Logic/Lecture 4 - Combinational Equivalence Checking.md",
-    "Uni/LC/Propositional Logic/Lecture 1 - Propositional Logic.md",
-    "Uni/SLP & OS/SLP/Assignments/A4 - Inter-Process Communication.md",
-    "Uni/SLP & OS/SLP/Assignments/A1 - Multithreading.md",
-    "Uni/SLP & OS/SLP/Inter-process Communication.md",
-    "Uni/SLP & OS/SLP/Synchronization.md",
     "Resources/Neodigital_P302606458_D20250710_Partnerkorrespondenz_K716206485.pdf",
     "Uni/DSA2/Untitled",
     "Java/Spring/Build Tools",

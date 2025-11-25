@@ -38,8 +38,40 @@
 ![[Java - client_server_communication.jpeg]]
 
 ## Serialization and Deserialization #Jargon #RestAPI 
-- Serialization = converting Java objects into JSON for the client
+- Serialization = Java objects -> JSON 
 - Deserialization = JSON -> Java objects
+
+### Serialization in Java
+```java
+ObjectMapper objectMapper = new ObjectMapper();
+Car car = new Car("yellow", "renault");
+objectmapper.writeValue(new file("target/car.json"), car);
+```
+Output:
+```json
+{"color":"yellow", "type":"renault"}
+```
+- `writeValueAsString` -> generates a JSON from a Java object and return the generated JSON as a string or as a byte array
+### Deserialization in Java
+- Convert a JSON String to a Java Object
+```java
+ObjectMapper objectMapper = new ObjectMapper();
+String json = "{ \"color\" : \"Black\", \"type\" : \"BMW\" }"; 
+Car car = objectMapper.readValue(json, Car.class);
+```
+#### How deserialization works basically:
+- Jackson tries to create an empty object using a no-args constructor. This can be done in 2 ways:
+	- Explicitly intialize the contructor
+	```java
+	class Amenity {
+		private String name;
+		private long id;
+		
+		public Amenity()
+	}
+	```
+	- Add `@NoArgsConstructor` from Lombok above the class
+- Set fields using getters
 
 ## Difference between `PUT` and `PATCH` Request
 - HTTP `PUT` request is used to replace and update the entire resource or document

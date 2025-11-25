@@ -35,3 +35,25 @@ int main() {
 
 ### Use case:
 - For constructors with one parameter
+
+## `namespace`
+- **name-scoping mechanism**
+### Why do we use namespaces
+#### 1. Avoid name collisions across files
+- If multiple files that have the same function signature. Without namespace, you get linker errors
+```cpp
+namespace snp {
+	void init();
+}
+
+namespace ui {
+	void init();
+}
+```
+- We we call the function:
+```cpp
+snp::init();
+ui::init();
+```
+
+

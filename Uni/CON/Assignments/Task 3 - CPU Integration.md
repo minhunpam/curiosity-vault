@@ -51,7 +51,8 @@
 	- The `divu_start` is continuously driven by signals `is_divu`, `divu_busy`, `divu_finish
 - The divider only starts once, when it hasn't done any computations and hasn't finished yet
 - Stall the CPU while the divider is busy
-- 
+- When the computation is done, extend the result to 32 bit
+- write back the result of the instruction to the register file
 
 ## What I struggled to understand
 ### 1. What are `busy_o` and `finish_o`?

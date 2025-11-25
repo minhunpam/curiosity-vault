@@ -1,6 +1,19 @@
+
 - Implement a simple starting prototype
 - Write tests for your implementation
 - Debug and improve your implementation
+## `brk()` and `sbrk()`
+- `brk()`
+	- Sets the program break (the end of the heap) to an absolute address
+	```c
+	int brk(void* addr);
+	```
+- `sbrk()`
+	- Moves the program break by an offset (positive or negative)
+	```C
+	void* sbrk(intptr_t increment)
+	```
+	
 
 ## System-level Code
 - Some errors won't be caused by your code directly user input

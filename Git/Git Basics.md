@@ -36,3 +36,22 @@ git --set-upstream origin main
 ## What does `git remote set-url origin git@github.com:minhunpam/to-do-list.git` do?
 - **Meaning**: replace the url of the remote named origin with the SSH URL
 - after this git command, all other commands that target `origin` will talk to that repository -- just updates the pointer (no repo created, history isn't moved)
+
+## `git config --global user.{name|email}`
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+```
+- This saves the settings in `~/.gitconfig` and applies to all your repositories
+
+### Checks:
+```
+git config --global user.name
+git config --global user.email
+```
+
+- If you want to see the full config file
+```bash
+git config --global --list
+```

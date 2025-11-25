@@ -25,8 +25,8 @@ ApplicationContext context = new AnnotationConfigApplicationContext(AccountConfi
 
 
 ## `@Component` - placed on a class
-- used to mark a class as a Spring-managed bean
-- When Spring scans the application, it detects classes annotated with `@Component` and registers them as beans in the Spring IOC container. These beans can then be injected into other components using dependency injection
+- used to mark a class as a Spring-managed BEAN 
+- When Spring scans the application, it detects classes annotated with `@Component` and registers them as BEANs in the Spring IOC container. These BEANs can then be injected into other components using dependency injection
 
 ### Specializations of `@Component`
 1. `@Service` - Used for service-layer classes that contain business logic
