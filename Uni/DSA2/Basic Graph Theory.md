@@ -32,4 +32,8 @@ $$
 
 - **Adjacency List**:
 	- An array, where each entry points to a linear list with all vertices
-	- 
+
+## Bipartite Graph
+- Characteristics of Bipartite Graph:
+	- No odd-length cycles: A bipartite graph cannot contain any odd-length cycles, as this would require vertices from the same set to be connected by an edge
+	

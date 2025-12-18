@@ -12,7 +12,7 @@
 #### R-Type Instruction
 - These are instructions that perform arithmetic and logic operations based on 2 input registers
 ![[CON - R type Instruction.png]]
-- `funct7`, `funct4`, `opcode` define the operation to be performed
+- `funct7`, `funct3`, `opcode` define the operation to be performed
 - `rs1` defines source register 1
 - `rs2` defines source register 2
 - `rd` defines the destination register
@@ -69,9 +69,9 @@ LW rd, offset(rs1)
 - Functionality:
 	- Loads a word (32 bits/ 4 Bytes) from memory into a register
 	- Example applications
-		- Load data from a pointer by setting offset to zero (`LW rd, 0x0(rs1)`)
+		- Load data from a pointer by setting offset to zero (`LW rd, 0(rs1)`)
 		- Load data from a pointer by providing a relative offset (`LW rd, offset(rs1)`)
-		- Load data from a fixed address at offset 0 by setting to `rs1` (`LW rd, addr(x0)`)
+		- Load data from a fixed address at offset 0 by setting to `rs1` to `x0` (`LW rd, addr(x0)`)
 
 ### Why do we need an offset?
 - Because the base pointers often point to structure, arrays, stack frames
@@ -124,7 +124,7 @@ SW rs2, offset(rs1)
 - Functionality:
 	- Store a word (32 bits/ 4 Bytes) to memory
 	- Example applications:
-		- Store data to a pointer in a register by setting offset to 0 (`SW rs2, 0x0(rs1))
+		- Store data to a pointer in a register by setting offset to 0 (`SW rs2, 0(rs1))
 		- Store data to a pointer + offset (`SW rs2, offset(rs1)`)
 		- Store data to an absolute address (`SW rs2, addr(x0`))
 ### Why is 12 bit splitted into 7 high bits and 5 low bits
@@ -156,6 +156,28 @@ ADDI rd, rs1, immediate
 		- Set a register to a constant value by using `x0` as source: `ADDI rd, x0, immediate`
 		- Increment/ Decrement a register by setting `rd = rs + 1` : `ADDI x1, x1, 1`
 
+## What is an immediate?
+- An immediate is a constant value encoded directly inside an instruction
+	- It is not stored in memory
+	- It is not loaded from a register
+	- It lives inside the machine code itself
+#### What is the point of immediates?
+1. You don't want to waste a register just to store small constants
+2. Much faster than loading constants from memory
+3. Critical for stack pointer and memory addressing
+	```asm
+	addi sp, sp, -16    # allocate 16 bytes on stack
+	addi sp, sp, 16     # deallocate
+	```
+
+### Difference from `ADD`
+- `ADDI` is to add immediate
+- `ADD` is to add registers
+	- Both operands come from registers
+	- No immediate allowed
+	- Used when the value is not constant
+
+
 ### More operations with Immediates
 - `LUI` - allows to load 20 bits into upper bits of a register
 	- together with `ADDI` this allows to set a register to a 32 bit constant value
@@ -170,8 +192,13 @@ ADDI rd, rs1, immediate
 ```assembly 
 BEQ rs1, rs2, offset
 ```
-- if the values of `rs1` and `rs2` are equal, then change the PC to PC + offset (**jump to another instruction instead of continuing normally**)
-	- Otherwise, continue normally (PC = PC + 4)
+
+```
+if (rs1 >= rs2) branch to offset (pc = pc + offset)
+else            continue with next instruction (pc = pc + 4)
+```
+
+
 > ***This is how loops, if-statement, and branches work in RISC-V***
 
 ![[CON - BEQ.png]]
@@ -198,16 +225,32 @@ BEQ rs1, rs2, offset
 ## JAL/JALR
 - `JAL` - Jump and Link
 	- Performs an unconditional jump to PC + imm*2
-	- Stores the PC of the next instruction in `rd`
+	- Saves the return address (the address of the next instruction) into `rd`
+	- It jumps to the target label (PC-relative jump)
 	- Example applications:
 		- Unconditonal jump (`rd` is set to `x0` in this case)
 		- Subroutine call (will be discussed later)
 ![[JAL.png]]
 - `JALR` - Jump and Link Register
-	- Performs an unconditional jump to `rs1 + imm`
-	- Stores the PC of next instruction in `rd`
+	- Save the return address (the address of the next instruction) into `rd` (`rd = PC + 4`)
+	- Jump to a target (`target = rs1 + offset`)
+	- Jump to target (with LSB = 0) - `PC = target & ~1`
+		- Because RISC-V instructions are always 4 Bytes and must be aligned. To avoid jumping into the middle of an instruction, `jalr` resets LSB to 0
+	- Update PC
+	- Example: 
+		- `0x1000:    jalr x1, 20(x2)`
+		- Registers:
+			- `x2 = 0x2000`
+			- `PC = 0x1000`
+		- Computer the return address: `x1 = PC + 4 = 0x1004`
+		- Compute the jump target: `target = x2 + 20 = 0x2000 + 0x14 = 0x2014`
+		- Force LSB to 0 (alignment): `target = 0x2014 & ~1 = 0x2014`
+		- Update: `PC = 0x2014`
 	- Example applications
 		- Subroutine call/return (well be discussed later)
+		
+	- Special case: `jalr zero, 0(ra)`
+		- If **rd = x0(zero register), the return address is not saved**
 
 
 ## Arithmetic Instructions

@@ -109,3 +109,55 @@ Proof:
 
 ## Continuous Random Variable
 
+## Joint Density Function
+- Is the probability density function (PDF) of 2 continuous random variables at the same time
+
+### Key properties of a joint density:
+1. It must be non-negative
+$$
+f(x,y) \geq 0
+$$
+2. The total probability over the entire region is 1
+$$
+	\int{\int f(x, y) dx}dy =1
+$$
+3. To get probabilities, you integrate
+$$
+P(a \leq X \leq b, c \leq Y \leq d) = \int_{a}^{b} \int_{c}^{d} f(x,y) dy dx
+$$
+### The marginal densities
+- Marginal of X:
+$$
+f_X(x) = \int_{0}^{1}f(x,y)dy
+$$
+- Marginal of Y:
+$$
+f_Y(x) = \int_{0}^{1}f(x,y)dx
+$$
+
+## Normal distribution (Gaussian distribution)
+- A type of continuous probability distribution for a real-valued random variable
+- Th general form of its probability density function is
+$$\Large
+f(x) = \frac{1}{\sqrt{2\pi \sigma^2}}e^{-\frac{(x - \mu)^2}{2 \sigma^2}}
+$$
+	-   $\mu$ ...mean/ expectation of the distribution
+	- $\sigma^2$ ...variance
+	- $\sigma$ ... standard deviation
+
+## Exponential Distribution
+- It is often used to model the time elapsed between events
+### Definition
+- A continuous random variable $X$ is said to have an _exponential_ distribution with parameter $λ>0$, shown as $X∼Exponential(\lambda)$, if its PDF is given by:
+$$\Large
+f_X(x) =
+\begin{cases}
+\lambda e^{-\lambda x} &x > 0 \\
+0 &\text{otherwise}
+\end{cases}
+$$
+## Expectation
+- Expected value = mean = average
+- Let $X$ be discrete random variable with range $R_X = \{x_1, x_2, x_3, \dots\}$ (finite or countably infinite). The expected value of $X$
+
+## Variance

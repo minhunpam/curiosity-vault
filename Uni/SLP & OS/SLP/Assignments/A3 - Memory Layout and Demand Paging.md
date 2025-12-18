@@ -288,7 +288,7 @@ getconf PAGE_SIZE
 
 ### Solution + Observation:
 - with `fork()` it creatd a (new) child process that had the same memory layout, same page tables as the parent process. But the kernel does not copy all the memory immediately
-- Instead, it uses a [[Multithreading#Copy-On-Write (COW)| Copy_On_Write]], in which shared pages between parent and child is marked as **copy-on-write**
+- Instead, it uses a [[1 - Multithreading#Copy-On-Write (COW)| Copy_On_Write]], in which shared pages between parent and child is marked as **copy-on-write**
 	- That means: when either process writes to one of those pages, the kernel allocates new physical page, copy the original data + updates, update that process's page table entry to point to the new page
 -> Only the modified pages are duplicated
 

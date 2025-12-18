@@ -22,11 +22,17 @@ $$
 \forall e \quad \text{with } \varphi[a/x]
 $$
 ### Conditions for Substitution
-1. Replace only free variables
-$$
-
-$$
-
+1. Replace only free variables 
+2. The term t must be free for a variable -> No capturing
+	- $\varphi = \exists x (P(x) \lor Q(z))$ - $z$ is free
+	- $\varphi [f(x)/z] = \exists x(P(x) \lor Q(f(x)))$  - $f(x)$ is bound
+### Universal Introduction
+![[LC - Universal Intruduction.png]]
+- What is a fresh $x_0$ if:
+	- It does not occur free any open assumption
+	- It does not occur in $\varphi$ 
+	- It is completely new and has no meaning or constraints attached to it yet
+- A brand-new variable name that has never been used before
 
 ## Proof Rules for existential introduction
 $$

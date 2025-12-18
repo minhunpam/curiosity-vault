@@ -56,4 +56,32 @@ snp::init();
 ui::init();
 ```
 
+## `new` and `delete`
+### `new`
+- If enough memory is available, it initializes the memory with a default value based on its type and returns the address of the allocated memory
+```cpp
+type* pointer_name = new type(size);
+```
+- Allocate block of memory (array)
+```cpp
+type* pointer_name = new[number_of_elements];
+// We can specify the elements
+type* pointer_name = new[number_of_elements]{e1, e2, ... , eN};
+```
+
+#### What if enough memory is not available during runtime?
+- If enough memory is not available in the heap to allocate, the new request indicates failure by throwing an exception of type `std::bad_alloc` (unless `nothrow` is used with the new operator, in which case it returns a `nullptr` pointer)
+
+### `delete`
+- `delete` operator is used to release dynamically allocated memory. It deallocates memory that was previously allocated with `new`
+```cpp
+delete ptr;
+```
+- To free a dynamically allocated array pointed by pointer available
+```cpp
+delete[] ptr;
+```
+
+
+
 

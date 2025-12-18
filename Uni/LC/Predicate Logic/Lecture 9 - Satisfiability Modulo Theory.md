@@ -1,0 +1,2 @@
+- Theory defines axioms for often used application/ problem domains
+- Definition of a First-order Theory $\tau$    

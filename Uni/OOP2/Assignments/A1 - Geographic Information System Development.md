@@ -107,3 +107,6 @@
 
 ### Communication with Backend 
 
+## Questions for Sandro:
+- In `MapGrpcServer`, I think the check `if request. ...` happing twice is pretty unnecassry, so why don't we leave the latter away
+- Is take decided by us already from the request or should 
