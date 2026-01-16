@@ -60,7 +60,11 @@ public class Main {
 ```
 
 ## Bounded types
-- can use the `extends` keyword to limit the types a generic class of method can accept
+- Can use the `extends` keyword to limit the types a generic class of method can accept
+- The `extends` keyword means `T` must be a subtype of a class, in the example underneath is `Member`
+	- A subtype can be: 
+		- a class that **implements** the interface
+		- a class that **extends** another class
 ```java
 class Stats<T extends Number> {  
   T[] nums;  
@@ -117,3 +121,4 @@ Map<String, Integer> map = new HashMap<>();
 List<> list = new ArrayList<Integer>();     // DOES NOT COMPILE
 Map<> map = new HashMap<String, Integer>(); // DOES NOT COMPILE
 ```
+

@@ -139,3 +139,62 @@ spring-boot-starter-*
 
 ## [[Maven Packaging Types]] (`<packaging></packaging>`)
 
+## Maven toolkit #Maven
+- Maven lifecycle contains buttons which are phases of the lifecycle, not the commands
+- `clean` - Deletes the `target/` dir
+- `validate`
+	- checks if:
+		- `pom.xml` is valid
+		- project structure makes sense
+- `compile` - compiles main source code
+- `test` - compiles test code --> compiles test code --> build fails if tests fail
+- `package` 
+	- creates the final artifact:
+		- `jar`
+		- `war`
+		- `ear`
+	- includes: `compile`, `test`, `package`
+- `verify`
+	- runs integration checks
+	- ensures the package is valid
+- `install`
+	- copies the built artifact into your **local Maven repository**
+	- used in multi-module projects
+- `deploy`
+	- uploads the artifact to a **remote repository**
+
+## Maven multi-module (aggregator) mistake
+```
+'packaging' with value 'jar' is invalid.
+Aggregator projects require 'pom' as packaging.
+```
+- Your `pom.xml` is acting as an aggregator (parent / multi-module project) which:
+	- Has `<modules>`
+	- Exists only to group submodules
+	- Does not produce a JAR itself
+	---> Therefore, its packaging must be `pom`, not `jar`
+```xml
+<packaging>pom</packaging>
+```
+> the `<packaging>` tag tells Maven **what kind of artifact this project produces** and therefore **which build lifecycle and plugins to apply**
+```xml
+<packaging>jar</packaging>
+```
+- Default
+- Builds a Java lib or app
+- Used for:
+	- Utility libraries
+	- Spring Boot applications
+	- Backend services
+```xml
+<packaging>pom</packaging>
+```
+- Produces no artifacts
+- Used for:
+    - Multi-module projects
+    - Dependency management
+    - Version alignment
+- Can define:
+    - `<modules>`
+    - `<dependencyManagement>`
+🚨 **Required** if `<modules>` is present.

@@ -144,6 +144,10 @@ interface ISchedule {
 ## Functional Interfaces
 [[Functional Interfaces]]
 
+## Can a function/ method return an interface?
+- What this means: "I don’t care _how_ this object is implemented —  I only promise it supports this behavior."
+- This is powerful because the caller does not depend on concrete classes
+
 ## Java Rules
 - In a Java Interface, any method without a modifier is implicitly
 ```java

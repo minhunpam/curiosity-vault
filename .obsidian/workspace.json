@@ -4,39 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "7ef64f225a4ca4d3",
+        "id": "4f17ede035070da9",
         "type": "tabs",
         "children": [
           {
-            "id": "3334c483acdbda6c",
+            "id": "5963036449c0259c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Uni/WI/Random Variable.md",
+                "file": "Java/Spring/Build Tools/Maven/Maven.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Random Variable"
+              "title": "Maven"
             }
           },
           {
-            "id": "58c48193f9bec9d0",
+            "id": "14931c4ed3ccf466",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Uni/CMS/Sampling.md",
+                "file": "Uni/CON/L7 - Networking I.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sampling"
+              "title": "L7 - Networking I"
+            }
+          },
+          {
+            "id": "c612f272d747ec86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Uni/CON/L7 - Networking I.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "L7 - Networking I"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "density",
+                "query": "pom.xml",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,11 +102,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 233.5
+    "width": 200
   },
   "right": {
     "id": "456c9bfddb057f87",
@@ -185,54 +199,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "58c48193f9bec9d0",
+  "active": "5963036449c0259c",
   "lastOpenFiles": [
+    "Uni/CON/Assignments/Task 5 - Ping me!.md",
+    "Uni/CON/L7 - Networking I.md",
+    "Uni/CON/L8 - Networking II.md",
+    "Java/Java Advanced/Java - Generics & Collections/Java Generics.md",
+    "Java/Java Advanced/Java - Generics & Collections/Method References.md",
+    "Uni/OOP2/Lecture Notes/1 - OOP Basics.md",
+    "Uni/OOP2/Assignments/A2 - Extension of A1.md",
+    "Uni/OOP2/Assignments/A2 - Manual inspection.md",
+    "Java/Java Core/OOP/Java Interfaces.md",
+    "Java/Java Core/OOP/OOP Properties.md",
+    "Java/Java Core/OOP/Java Nested Classes (Inner Classes).md",
+    "Java/Java Core/OOP/Java - OOP.md",
+    "Java/Java Core/OOP/Design Principles.md",
+    "Java/Java Core/Java Modifiers.md",
+    "Git/Git Basics.md",
+    "Jargon in tech.md",
+    "Uni/OOP2/Lecture Notes",
+    "Uni/LC/Propositional Logic/Lecture 3 - SAT Solving.md",
+    "Uni/DSA2/String Matching.md",
+    "Uni/DSA2/My toolbox.md",
+    "Uni/CON/L5 - Processors.md",
+    "Uni/LC/Predicate Logic/Lecture 9 - Satisfiability Modulo Theory.md",
+    "Uni/LC/Propositional Logic/Lecture 2 - Natural Deduction.md",
+    "Uni/LC/Propositional Logic/Lecture 1 - Propositional Logic.md",
+    "Uni/LC/L&C (705.011).md",
+    "Uni/LC/Propositional Logic/Lecture 4 - Combinational Equivalence Checking.md",
+    "Uni/LC/Propositional Logic/Lecture 5 - Binary Decision Diagrams (BDDs).md",
+    "Resources/LC/CON - SACK example.png",
+    "Low Level/C++/C++.base",
+    "Resources/CON/CON - TCP Congeston Control.png",
+    "Pasted image 20251228002451.png",
+    "Resources/CON/CON - UDP datagram header.png",
+    "Resources/CON/CON - IPv6 Packet Structure.png",
+    "Resources/CON/CON - example of having multiple addresses for single interface.png",
+    "Resources/CON/CON - IPv4 Fragmentation.png",
+    "Resources/CON/CON - ipv4 packet overview.png",
+    "Resources/CON/CON - Role of Subnet Mask.png",
+    "Pasted image 20251221170641.png",
     "Resources/CMS",
-    "Resources/CMS/CMS - sampling key terms.png",
-    "Uni/WI/Random Variable.md",
-    "Uni/CMS/Sampling.md",
-    "Uni/WI/Probability Theory.md",
-    "Tech.md",
     "Uni/CMS",
-    "Uni/Untitled.md",
     "Untitled.base",
     "Untitled 1.base",
-    "Python/Python Virtual Environment.md",
-    "Uni/SLP & OS/SLP/Lecture Notes/6 - Calling Conventions, Inline Assembly, Kernel modules.md",
-    "Uni/SLP & OS/SLP/Assignments/A6 - Calling convention and (inline) assembly.md",
-    "Uni/LC/Predicate Logic/Lecture 9 - Satisfiability Modulo Theory.md",
-    "Uni/WI/Joint distributions.md",
-    "Uni/DSA2/Basic Graph Theory.md",
-    "Uni/DSA2/Minimum Spanning Tree.md",
-    "Uni/DSA2/Dynamic Programming.md",
-    "Uni/LC/Z3 Solver.md",
-    "Uni/CON/Assignments/Task 4 - Quicksort in Risc-V.md",
     "Python",
-    "Resources/DSA/DSA - cuts in graphs.png",
-    "Java/Java Core/OOP/Java - OOP.md",
-    "Java/Java Core/OOP/Java Nested Classes (Inner Classes).md",
-    "REST API.md",
-    "Java/Java Core/Java User Input.md",
-    "Docker.md",
-    "Uni/CON/Assignments/Task 2 - Binary GCD.md",
-    "Uni/OOP2/Assignments/A1 - Geographic Information System Development.md",
-    "Uni/CON/L6 - Programming a RISC-V CPU.md",
-    "Uni/CON/Assignments/Task 3 - CPU Integration.md",
-    "Uni/CON/Assignments/Task 1 - Integer Square Root.md",
     "Uni/SLP & OS/SLP/Lecture Notes",
-    "Resources/LC/LC - Universal Intruduction.png",
-    "Resources/SLP/SLP - merge problem.png",
-    "Resources/CON/CON - Stack frame example.png",
-    "Resources/CON/CON - structural diagram example.png",
-    "Resources/CON/CON - structural diagram.png",
-    "Resources/CON/CON - link layer.png",
-    "Resources/CON/CON -  stack example.png",
-    "Resources/CON/CON - combination of 2 Mealy machines.png",
     "Uni/LC/Predicate Logic",
     "Uni/LC/Propositional Logic",
-    "Resources/Neodigital_P302606458_D20250710_Partnerkorrespondenz_K716206485.pdf",
-    "Uni/DSA2/Untitled",
-    "Java/Spring/Build Tools",
     "Untitled.canvas"
   ]
 }

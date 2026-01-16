@@ -94,3 +94,6 @@ urn:isbn:1234567890
 	- Adding 24 hours to a date might not land you at “tomorrow, same time” — because the day might be 23 or 25 hours long.
 4. Database/ API mismatches
 
+## What does heuristic mean?
+- a **rule-of-thumb** or **practical guideline** that works well in practice,  
+but is **not guaranteed to be optimal or provably best in all cases**.

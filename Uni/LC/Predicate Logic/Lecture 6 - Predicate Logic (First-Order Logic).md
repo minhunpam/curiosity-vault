@@ -64,6 +64,14 @@ $$
 
 ### Free and bound variables
 - A free variable - an instance of $x$ in $\varphi$ if it's not in the scope of a $\forall x$ or $\exists x$
+	- Examples:
+		- $\forall x (P(x)) \land Q(x)$
+			- `x` in `P(x)` is bound
+			- `x` in `Q(x)` is free
+		- $\exists x (P(x)) \land \forall x (Q(x))$
+			- Both `x` are bound
+			- They are different bindings
+			- Names are reused, but scopes are separate
 - A bound variable, otherwise
 
 ## Model $M$ for formulas in Predicate Logic

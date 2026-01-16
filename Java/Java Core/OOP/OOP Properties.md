@@ -97,7 +97,7 @@ class Dog extends Animal {
 - is the process of hiding certain details and showing only essential information to the user
 - Abstraction can be achieved with either **abstract classes** or **interfaces**
 - [[Java Modifiers#Non-Access Modifiers | Non-Access Modifiers]]
-[[Java Interfaces]]
+- [[Java Interfaces]]
 
 ### Java Interfaces
 - An `interface` is a completely "abstract class" that is used to group related methods with empty bodies
@@ -161,4 +161,10 @@ class DemoClass implements FirstInterface, SecondInterface {
 }
 ```
 
-
+### Abstract class
+1. **If a class has at least one abstract method, the class must be abstract**
+2. **Abstract class may have zero abstract methods**
+	- Used to prevent instantiation
+	- Act as a base type
+3. **Abstract methods cannot have a body**
+4. **Subclasses must implement all abstract methods**

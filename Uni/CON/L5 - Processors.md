@@ -106,12 +106,31 @@ ADD AX, [BX]    ;Add value from memory (at address in BX) directly to register A
 	- Address `0x1001` refers to the next byte
 	- Address `0x1002` referes to next byte 
 ### Endianess
-- 2 options for the sequence of storing the bytes of a word in memory:
-	1. **Lilttle endian: LSB (least significant byte) - at the lowest address** 
-		-> Memory grows up
-	2. **Big endian: MSB (most significant byte) - at the lowest address** 
-		-> Memory grows down
-![[CON - endianess (little and big).png]]
+#### What is Endianness?
+- Refers to the order in which bytes are arranged in memory
+- If one computer reads bytes from left -> right and another reads them from right to left, **issues arise when these computers need to communicate**
+- Endianness ensures that bytes in computer memory are read in a specific order
+- Endianness comes in two primary forms: Big-endian (BE) and Little-endian (LE).
+	- **Big-endian (BE)**: 
+		- Stores the MSB (the **"big end"**) first. 
+		- This means that the first byte (at the lowest memory address) is the largest, which makes the most sense to people who read **LEFT TO RIGHT**.
+	- **Little-endian (LE)**: 
+		- Stores the LSB (the **"little end"**) first. 
+		- This means that the first byte (at the lowest memory address) is the smallest, which makes the most sense to people who read **RIGHT TO LEFT**.
+#### Big-endian
+For instance, a 32-bit integer `0x12345678` would be stored in memory as follows in a big-endian system:
+```
+Address:   00   01   02   03
+Data:      12   34   56   78
+```
+
+#### Little-endian
+For the same 32-bit integer `0x12345678`, a little-endian system would store it as:
+```
+Address:   00   01   02   03
+Data:      78   56   34   12
+```
+
 
 ### Basic idea of memory design
 - Memories are built using so-called memory cells. Each cell can store one bit

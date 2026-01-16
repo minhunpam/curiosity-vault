@@ -18,7 +18,7 @@ public class Main {
 ```
 
 ## Non-static Inner Class
-- Unlike "regular" class, an inner class can be `private` or `protected`. If you don't want out objects to access the inner class
+- Unlike "regular" class, an inner class can be `private` or `protected`. If you don't want out-objects to access the inner class
 * Inner class have the following properties:
 	1. can be declared `public`, `protected`, `private`
 	2. can extend any class and implement interfaces
@@ -84,8 +84,6 @@ public class PrintNumbers {
 
 #### What is effectively `final`?
 - a variable is **effectively final** if **its value is not changed after it is assigned**, even though it is **not explicitly declared with the `final` keyword**
-
-
 ### Why can local class only access local variables if they are `final` or effectively `final`
 ```java
 void doSomething() {

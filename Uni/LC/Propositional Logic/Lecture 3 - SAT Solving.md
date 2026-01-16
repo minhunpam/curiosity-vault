@@ -82,8 +82,6 @@ For example: $$\varphi = (\neg a \lor b) \land (\neg b \lor c) \land (\neg c \lo
 
 ![[CDCL + Conflict Graph.png]] 
 
-- A rule of thumbs from the professor is whenever we learn a new clause, we go back to the 
-
 - Every time you encounter a conflict:
 1. Draw conflict graph
 	- The starting node is either a decision
