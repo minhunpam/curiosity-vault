@@ -191,21 +191,45 @@ $$
 	- $\mathcal{A} = \mathcal{P}(\Omega)$
 	- $P(\{(j_1\dots j_n)\}) = N^{-n} \Rightarrow = P(A) = |A|\times N^{-n}$
 
+#### Bernoulli distribution
+- The simplest discrete random variable
+- A Bernoulli random variable is a random variable that can only take two possible values, usually 0 and 1
+- This random variable models random experiments that have two possible outcomes, sometimes referred to as **success** and **failure**.
+	- Examples:
+		- You take a pass-fail exam. You either pass (resulting in X=1) or fail (resulting in X=0).
+		- You toss a coin. The outcome is either heads or tails.
+		- A child is born. The gender is either male or female.
+- **A random variable $X$ is said to be a Bernoull random variable with paramter $p$, if its PMF is given by**
+$$\Large
+\boxed{
+  \begin{aligned}
+  P_X(x) =
+  \begin{cases}
+  p &\text{for } x = 1 \\
+  1 -p &\text{for } = 0 \\
+  0 &\text{otherwise}
+  \end{cases}
+  \end{aligned}
+}
+$$
+
+
+
 #### Multinomial Distribution
 $$
 \Large
 P(|\text{color i}| = k_i, 1 \leq i \leq L) = \underbrace{{n \choose {k_1, k_2, \dots , k_L}}}_{\frac{n!}{k_1!k_2!\dots k_L!}} \times p_1^{k_1} \times \dots \times p_L^{k_L} 
 $$
-##### Binomial Distribution
-- a special case of **Multinomial Distrubtion**, where L = 2
+#### Binomial Distribution
+- a special case of **Multinomial Distribution**, where L = 2
 	- $p = \frac{N_1}{N}$
 	- $q = 1 - p = \frac{N_2}{N}$
 Then we have:
-$$
+$$\Large
 P(|Color 1| = k) = {n \choose k}\times p^k \times q^{n-k}
 $$
 
-#### Examples
+##### Examples
 1. We roll 5 dices. What is the probability that we roll exactly 2 dices with 4?
 	- $P(X = 4) = \frac{1}{6}$
 	- $P(X \neq 4) = \frac{5}{6}$
@@ -221,6 +245,8 @@ $\Rightarrow P(\text{rolling exactly 2 dices with 4}) = {5 \choose 2} \frac{1}{6
 	$$
 	- $\Rightarrow P(\text{k passengers will come}) = {200 \choose k} \times (0.95)^k \times (0.05)^{200 -k}$
 
+#### Lemma
+- **If $X_1, X_2, \dots, X_n$ are indepedent $Bernoulli(p)$ random variables, then the the random variable $X$ defined by $X = X_1 + X_2 + \dots + X_n$ has a $Binomial(n,p)$ distribution** 
 
 ## Discrete Probability Space (diskreter Wahrscheinlichkeitsraum)
 - A Laplace-Experiment is a special case of **Finite Sample Space (endlicher Stichprobenraum)**

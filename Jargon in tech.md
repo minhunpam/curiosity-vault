@@ -1,4 +1,4 @@
-## What is Business Logic? #Jargon
+## Business Logic #Jargon
 - custom rules/ algorithms that define how a business application/ system behaves according to **real-world business rules and processes**
 - business logic makes an application behave like the real-world version of the business it supports
 ### Example: banking system:
@@ -9,7 +9,7 @@
 ## Bootstrapping #Jargon
 - automatically setting up, initializing and wiring a component so you don't have to do it manually
 
-## _endpoint_ in Spring (and API)
+## _Endpoint_ in Spring (and API)
 - An **endpoint** is basically:
 > A URL(path) + HTTP method that your application exposes, which clients can call
 
@@ -86,14 +86,15 @@ urn:isbn:1234567890
 - In many countries, clocks are:
 	- moved forward by 1 hour in spring - On the last Sunday of March: Berlin jumped from **01:59 -> 03:00 (02:00 never existed)** 
 	- moved back by 1 hour in autumn: - On the last Sunday of October: Berlin jumped from **02:59 -> 02:00 again (the hour from 02:00 - 02:59 happened twice**
-
 ### 2. DST issue in programming?
 1. Non-existent times
 2. Ambiguous times
 3. Offset mistakes
 	- Adding 24 hours to a date might not land you at “tomorrow, same time” — because the day might be 23 or 25 hours long.
 4. Database/ API mismatches
-
-## What does heuristic mean?
+## Heuristic?
 - a **rule-of-thumb** or **practical guideline** that works well in practice,  
 but is **not guaranteed to be optimal or provably best in all cases**.
+## Throughput?
+- Amount of completed work per time
+- **In thread pools/ concurrency**: how fast does my thread pool get things done overall?

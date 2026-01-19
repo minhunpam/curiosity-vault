@@ -4,49 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4f17ede035070da9",
+        "id": "a6256b75d9b8030f",
         "type": "tabs",
         "children": [
           {
-            "id": "5963036449c0259c",
+            "id": "e0707c0af44ecd5c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Spring/Build Tools/Maven/Maven.md",
+                "file": "Uni/OOP2/1 - Lecture Notes/6 - User Interfaces & Libraries.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Maven"
-            }
-          },
-          {
-            "id": "14931c4ed3ccf466",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Uni/CON/L7 - Networking I.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "L7 - Networking I"
-            }
-          },
-          {
-            "id": "c612f272d747ec86",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Uni/CON/L7 - Networking I.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "L7 - Networking I"
+              "title": "6 - User Interfaces & Libraries"
             }
           }
         ]
@@ -81,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pom.xml",
+                "query": "eag",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -199,54 +170,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5963036449c0259c",
+  "active": "e0707c0af44ecd5c",
   "lastOpenFiles": [
-    "Uni/CON/Assignments/Task 5 - Ping me!.md",
-    "Uni/CON/L7 - Networking I.md",
-    "Uni/CON/L8 - Networking II.md",
-    "Java/Java Advanced/Java - Generics & Collections/Java Generics.md",
-    "Java/Java Advanced/Java - Generics & Collections/Method References.md",
-    "Uni/OOP2/Lecture Notes/1 - OOP Basics.md",
-    "Uni/OOP2/Assignments/A2 - Extension of A1.md",
-    "Uni/OOP2/Assignments/A2 - Manual inspection.md",
-    "Java/Java Core/OOP/Java Interfaces.md",
-    "Java/Java Core/OOP/OOP Properties.md",
-    "Java/Java Core/OOP/Java Nested Classes (Inner Classes).md",
-    "Java/Java Core/OOP/Java - OOP.md",
-    "Java/Java Core/OOP/Design Principles.md",
-    "Java/Java Core/Java Modifiers.md",
-    "Git/Git Basics.md",
+    "Resources/Java/OOP2 - MVP.png",
+    "Uni/OOP2/1 - Lecture Notes/6 - User Interfaces & Libraries.md",
+    "Uni/WI/1 - Probability Theory.md",
+    "Untitled 1.base",
+    "Uni/OOP2/1 - Lecture Notes/5 - Reactive Concepts.md",
+    "Resources/Java/OOP2 - Publish-Subscribe.png",
+    "Resources/Java/OOP2 - Message queue.png",
+    "Resources/Java/OOP2 - reactive manifesto.png",
+    "Uni/OOP2/1 - Lecture Notes/1 - OOP Basics.md",
+    "Uni/OOP2/1 - Lecture Notes/4 - Networking and Socket Programming.md",
+    "Uni/LC/1 - Propositional Logic/Lecture 4 - Combinational Equivalence Checking.md",
+    "Uni/OOP2/Networking & Sockets.md",
+    "Uni/LC/1 - Propositional Logic/Lecture 5 - Binary Decision Diagrams (BDDs).md",
+    "Uni/LC/2 - Predicate Logic/Lecture 9 - Satisfiability Modulo Theory.md",
+    "Uni/LC/1 - Propositional Logic/Lecture 1 - Propositional Logic.md",
+    "Uni/LC/2 - Predicate Logic/Lecture 6 - Predicate Logic (First-Order Logic).md",
+    "Uni/WI/2 - Random Variable.md",
+    "Uni/WI/Joint distributions.md",
     "Jargon in tech.md",
-    "Uni/OOP2/Lecture Notes",
-    "Uni/LC/Propositional Logic/Lecture 3 - SAT Solving.md",
-    "Uni/DSA2/String Matching.md",
-    "Uni/DSA2/My toolbox.md",
-    "Uni/CON/L5 - Processors.md",
-    "Uni/LC/Predicate Logic/Lecture 9 - Satisfiability Modulo Theory.md",
-    "Uni/LC/Propositional Logic/Lecture 2 - Natural Deduction.md",
-    "Uni/LC/Propositional Logic/Lecture 1 - Propositional Logic.md",
-    "Uni/LC/L&C (705.011).md",
-    "Uni/LC/Propositional Logic/Lecture 4 - Combinational Equivalence Checking.md",
-    "Uni/LC/Propositional Logic/Lecture 5 - Binary Decision Diagrams (BDDs).md",
+    "Java/Java Advanced/I-O Stream.md",
+    "Java/Java Advanced/Java Lambda.md",
+    "Java/Java Advanced/Java Annotations.md",
+    "Java/Java Advanced/Java Advanced.md",
+    "Java/Java Advanced/Computer Organizations and Networks/Computer Organization & Networks.md",
+    "Java/Java Advanced/Computer Organizations and Networks/Hardware Basics.md",
+    "Java/Java Advanced/Computer Organizations and Networks/Networks.md",
+    "Java/Java Advanced/Computer Organizations and Networks/Processors I.md",
+    "Java/Java Advanced/Computer Organizations and Networks/Processors II.md",
+    "Java/Java Core/Basics",
+    "Resources/Java/OOP2 - OSI model vs TCP IP model.png",
+    "Uni/CON/L7 - Networking I.md",
+    "Uni/OOP2/1 - Lecture Notes/3- Multithreading.md",
+    "Resources/Java/OOP2 - State Diagram.png",
+    "Resources/Java/OOP2 - DIP.png",
+    "Resources/Java/OOP2 - ISP.png",
+    "Resources/Java/OOP2 - LSP.png",
+    "Resources/Java/OOP2 - OCP.png",
+    "Uni/OOP2/1 - Lecture Notes",
     "Resources/LC/CON - SACK example.png",
     "Low Level/C++/C++.base",
-    "Resources/CON/CON - TCP Congeston Control.png",
-    "Pasted image 20251228002451.png",
-    "Resources/CON/CON - UDP datagram header.png",
-    "Resources/CON/CON - IPv6 Packet Structure.png",
-    "Resources/CON/CON - example of having multiple addresses for single interface.png",
-    "Resources/CON/CON - IPv4 Fragmentation.png",
-    "Resources/CON/CON - ipv4 packet overview.png",
-    "Resources/CON/CON - Role of Subnet Mask.png",
-    "Pasted image 20251221170641.png",
     "Resources/CMS",
     "Uni/CMS",
     "Untitled.base",
-    "Untitled 1.base",
     "Python",
     "Uni/SLP & OS/SLP/Lecture Notes",
-    "Uni/LC/Predicate Logic",
-    "Uni/LC/Propositional Logic",
+    "Uni/LC/2 - Predicate Logic",
     "Untitled.canvas"
   ]
 }

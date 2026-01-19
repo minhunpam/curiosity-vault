@@ -16,14 +16,14 @@ $$
 
 ## Discrete Random Variables
 $X$ is a discrete random variable, if its range is countable
-## Probability Mass Function
+## Probability Mass Function (PMF)
 Let $X$ be a discrete random variable with range $R_X = \{x_1, x_2, x_3, \dots\}$. The function:
 $$\Large
 \boxed{P_{X}(x_k) = P(X = x_k), \text{ for k } = 1, 2, 3, \dots}
 $$
 is called the probability mass function
 
-> ***The PMF is a probability measure that gives us probabilities of the possible values for a randome variable***
+> ***The PMF is a probability measure that gives us probabilities of the possible values for a random variable***
 
 - For discrete random variables, the PMF is also called the probability distribution
 ### Properties of PMF:
@@ -56,7 +56,7 @@ $$
 - $X \sim P_{\lambda}$: $X$ follows Poisson distribution
 	- $\lambda$ : expected rate of occurences of a event over given period of time
 
-## Cumulative Distribution Function
+## Cumulative Distribution Function (CDF)
 - advantage: can be defined for any kind of random variable (discrete, continuous, mixed)
 ### Definition
 - The cumulative distribution function (CDF) of random variable $X$ is defined as
@@ -71,8 +71,8 @@ $$
 $$
 F_{X}(x_k) - F_{X}(x_k - \varepsilon) = P_{X}(x_k)
 $$
-	- The size of the jump at each point is equal  to the probability at that point
-- The CDF is always a non-decreasing function $\Leftrightarrow$ if $y \geq x$ , then $F_{X}(x) \geq F_{X}(y)$ 
+	- **The size of the jump at each point is equal  to the probability at that point**
+- The CDF is **always a non-decreasing function** $\Leftrightarrow$ if $y \geq x$ , then $F_{X}(z) \geq F_{X}(x)$ 
 - The CDF approaches 1 as x becomes large:
 $$\Large
 \boxed{\lim_{x \to \infty} F_{X}(x) = 1}
@@ -106,11 +106,117 @@ Proof:
 > ***Also note that the open and closed circles at point $x =1$ indicate that $F_{X}(1) = \frac{3}{4} \text{ not } \frac{1}{4}$***
 
 ![[CNF example.png]]
+### Expectation of discrete random variable
+Let $X$ be a discrete random variable with range $R_X = \{x_1, x_2, x_3, \dots\}$ (finite or countably infinite). The ** expected value/ mean** of $X$, denoted by $E(X)$, is defined as:
+$$\Large
+\boxed{
+  E(X) = \sum_{x_k \in R_X}x_kP(X=x_k) = \sum_{x_k \in R_X}x_kP_X(x_k)
+}
+$$
+- Different notations:
+$$\Large
+\boxed{
+  E(X) = EX = E[X] = \mu_X
+}
+$$
+#### Example:
+- So I define a discrete random variable: $X = \text{Number of workouts in a week}$ and I have a probability distribution as following:
+
+| $X$ | $P(X)$ |
+| --- | ------ |
+| 0   | 0.1    |
+| 1   | 0.15   |
+| 2   | 0.4    |
+| 3   | 0.25   |
+| 4   | 0.1    |
+- The expected value that I calculated is: $2.1$ but the question is what 0.1 workout. Well this might not be true when saying I do 2.1 workouts in a single week. But this value is valuable for a long run, says after 10 weeks, the expected number of workouts is 21 times
+#### Linearity of expectation
+- If $X_1, X_2, \dots , X_n$ are random variables and $a_1, a_2, \dots, a_n$ are constants, then:
+$$\Large
+\boxed{
+  E(\sum_{i=1}^n a_i X_i) = \sum_{i=1}^n a_i E[X_i] 
+}
+$$
+- In particular, $E[X + Y] = E[X] + E[Y]$ 
+
+### Variance of discrete random variable
+- The **variance** is the measure of how spread out the distribution of a random variable is. The **variance** of a random variable $X$, with mean $EX = \mu_{X}$, is defined as
+$$
+\boxed{
+  Var(X) = E[(X - \mu_{X})^2]
+}
+$$
+- A large value of variance means that the distribution is very spread out.
+- A low value of variance means that the distribution is concentrated around its average
+> **Note**: $Var(X)$ has a different unit than $X$. For example, if $X$ is measure  in $meters$ then $Var(X)$ is in $meters^2$ . To solve this issue, we define another measure, called the **stardard deviation**, usually shown as $\sigma_{X}$ , which is simply the square root of variance
+
+$$
+\boxed{
+  SD(X) = \sigma_{X} = \sqrt{Var(X)}
+}
+$$
+#### Useful formula for computing the variance
+$$
+\boxed{
+	Var(X) = E[X^2] - [EX]^2
+}
+$$
+##### Example:
+- Roll a fair dice and let $X$ be the resulting number. Find $E(X), Var(X), \sigma_X$
+- We have $R_X = \{1,2,3,4,5,6\}$ and $P_{X}(k) = \frac{1}{6}$ for $k=1,2,\dots,6$. Thus we have:
+	- $EX = 1.1/6 + 2.1/6 + 3.1/6 + 4.1/6 + 5.1/6 + 6.1/6 = 7/2$
+	- $EX^2 = 1.1/6 + 4.1/6 + 9.1/6 + 16.1/6 + 25.1/6 + 36.1/6 = 91/6$
+	---> $Var(X) = EX^2 - (EX)^2 = 91/6 - (7/2)^2 \approx 2.92$
+	---> $\sigma_X = \sqrt{Var(X)} \approx \sqrt{2.92} \approx 1.71$
+	 
+#### Theorems:
+1. For a random variable $X$ and real numbers $a$ and $b$
+$$
+\boxed{
+	Var(aX + b) = a^2Var(X)
+}
+$$
+Hence, we can conclude, for standard deviation, $SD(aX + b) = |a|SD(X)$
+2. **If $X_1, X_2, \dots, X_n$ are independent random variables and $X = X_1 + X_2 + \dots + X_n$, then:**
+$$
+\boxed{
+	Var(X) = Var(X_1) + Var(X_2) + \dots + Var(X_n)
+}
+$$
+
 
 ## Continuous Random Variable
+- A random variable $X$ with CDF $F_X(x)$ is said to be continuous if $F_X(x)$ is a continuous function for all $x \in \mathbb{R}$.
+> **We will also assume that the CDF of continuous random variable is differentiable almost everywhere in $\mathbb{R}$**
+## Probability Density Function (PDF)
+- The PMF does not work for continuous random variables, because for a continuous random variable $P(X=x)=0$ for all $x \in \mathbb{R}$
+- **Consider a continuous random variable $X$ with absolutely continuous CDF $F_X(x)$. The function $f_X(x)$ defined by:**
+$$\Large
+\boxed{
+f_X(x) = \frac{dF_X(x)}{dx} = F'_{X}(x), \text{if $F_X(x)$ is differentiable at x}
+}
+$$
+is called **Probability Density Function (PDF) of $X$**
+- Since PDF is the derivate of the CDF, the CDF can be obtained from PDF by integration (assuming absolute):
+$$\large
+F_X(x) = \int_{-\infty}^{x}f_X(u)du
+$$
+Also, we have:
+$$\large
+P(a < X \leq b) = F_X(b) - F_X(a) = \int_{b}^{a}f_X(u)du
+$$
+In particular, if we integrate over the entire real line, we must get 1:
+$$\large
+\int_{-\infty}^{\infty}f_X(u)du = 1
+$$
+### Properties of the PDF:
+1. $f_X(x) \geq 0 \text{ for all } x \in \mathbb{R}$
+2. $\int_{-\infty}^{\infty}f_X(u)du = 1$
+3. $P(a < X \leq b) = F_X(b) - F_X(a) = \int_{b}^{a}f_X(u)du$
+4. More generally, for a set $A$, $P(X \in A) = \int_{A}f_X(u)du$
+	- An example of set $A$ could be an union of some disjoint intervals.
+	- For example: if you want to find $P(X \in [0, 1] \cup [3, 4]$, you can write: $P(X \in [0, 1] \cup [3, 4]) = \int_{0}^{1}f_X(u)du + \int_{3}^{4}f_X(u)du$
 
-## Joint Density Function
-- Is the probability density function (PDF) of 2 continuous random variables at the same time
 
 ### Key properties of a joint density:
 1. It must be non-negative
